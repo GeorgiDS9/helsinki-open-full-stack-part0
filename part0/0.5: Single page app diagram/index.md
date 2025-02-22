@@ -1,9 +1,17 @@
+## 0.5: Single page app diagram
+
+### Requirement
+
+Create a diagram depicting the situation where the user goes to the single-page app version of the notes app at https://studies.cs.helsinki.fi/exampleapp/spa.
+
+### Solution
+
 ```mermaid
 sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: SPA loads only one HTML document at the start; navigation is handled via JavaScript.
+    Note right of browser: SPA loads only one HTML document at the start. Navigation is handled via JavaScript.
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
